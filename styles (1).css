@@ -1,0 +1,194 @@
+/* Definindo as animações */
+@keyframes unfold {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes unfoldUp {
+    0% {
+        transform: translateY(100vh); /* Começa abaixo da tela */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicando as animações */
+.content-box {
+    animation: unfold 1s ease-out forwards;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Largura máxima para não exceder o tamanho */
+    color: #ff5678; /* Cor ajustada para o texto */
+    font-family: 'Dancing Script', cursive;
+}
+
+.curriculum {
+    animation: unfoldUp 1s ease-out forwards; /* Aplica a animação de baixo para cima */
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.social-icons {
+    animation: fadeIn 1s ease-out 2s forwards; /* Ajustado para aparecer após 2 segundos */
+    opacity: 0; /* Inicialmente invisível */
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ff5678; /* Cor dos ícones ajustada */
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #ff8a80; /* Cor dos ícones ao passar o mouse */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://lh3.googleusercontent.com/pw/AP1GczP09tNcRQieb5ndCf908zIOd3P3YDlFT94fkqCSp5DV38gjfRlQSkmruxJw5BZdsYKhQRAmIZOwhPATugkWQrDwyhU2_uUMnIGXP889md4KHBL7C095Y3DI8Uyvm8xzypsmn3ifw3y7kWwtNsmYqoM=w1000-h368-s-no-gm') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumentado para dar mais espaço */
+    flex-wrap: wrap; /* Adicionado para melhorar o layout responsivo */
+}
+
+.gif {
+    width: 100px; /* Ajustado para melhor visibilidade */
+    height: 100px; /* Ajustado para melhor visibilidade */
+    border-radius: 50%;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    color: #b0bec5;
+}
+
+.content-box {
+    max-width: 600px; /* Ajustado para largura máxima */
+    padding: 30px; /* Ajustado para adicionar espaçamento interno */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento interno adicionado */
+}
+
+.curriculum h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ff5678;
+}
+
+/* CSS para a caixa secundária */
+.secondary-box {
+    animation: unfold 1s ease-out forwards; /* Animação de cima para baixo */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; /* Largura ajustada */
+    width: 100%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 20px; /* Espaçamento entre as caixas */
+}
+
+.secondary-box .header {
+    font-size: 1.5em; /* Tamanho do nome */
+    margin-bottom: 10px; /* Espaçamento abaixo do nome */
+}
+
+.secondary-box .box-content {
+    display: flex;
+    gap: 20px; /* Espaçamento entre a foto e as informações */
+    align-items: flex-start;
+    margin-bottom: 20px; /* Espaçamento abaixo do conteúdo da caixa */
+    width: 100%; /* Garante que o conteúdo utilize a largura disponível */
+}
+
+.secondary-box .box-content img {
+    width: 150px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.secondary-box .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-box .info p {
+    margin: 5px 0; /* Margem entre os itens da lista */
+    font-size: 1.2em;
+}
+
+.secondary-box .button {
+    background-color: #ff5678;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.secondary-box .button:hover {
+    background-color: #ff8a80;
+}
