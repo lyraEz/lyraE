@@ -82,9 +82,13 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://lh3.googleusercontent.com/pw/AP1GczP09tNcRQieb5ndCf908zIOd3P3YDlFT94fkqCSp5DV38gjfRlQSkmruxJw5BZdsYKhQRAmIZOwhPATugkWQrDwyhU2_uUMnIGXP889md4KHBL7C095Y3DI8Uyvm8xzypsmn3ifw3y7kWwtNsmYqoM=w1000-h368-s-no-gm') no-repeat center center fixed;
+    background: url('https://lh3.googleusercontent.com/pw/AP1GczN6Bfljz0paXizrMDfQvs_hRA0-Ywjbs1pfEMuW04IIGpbmZToFhZbiCqBmHHofzWsH8TFuWERIzmd9tvaGlYYnVa-ohgliuidBDAUUU2rE2rrUIOyMap1JiCOSjL7ocwpC8usL5n5m7nNMbpXznak=w1550-h872-s-k-no-gm?authuser=0') no-repeat center center fixed;
     background-size: cover;
 }
+/*depois bota o áudio lenda]
+- embed
+- link
+- efts & anm*/
 
 .container {
     display: flex;
